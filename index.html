@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Latest compiled and minified CSS. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--Optional Theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid" style="background:rgb(210, 170, 127);">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- begin carousel -->
+        <div id="featuredPhotos" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#featuredPhotos" data-slide-to="0" class="active"></li>
+            <li data-target="#featuredPhotos" data-slide-to="1"></li>
+            <li data-target="#featuredPhotos" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="http://unsplash.it/1000/400?image=1" width="100%" alt="Photo">
+            </div>
+            <div class="item">
+              <img src="http://unsplash.it/1000/400?image=2" width="100%" alt="Photo">
+            </div>
+            <div class="item">
+              <img src="http://unsplash.it/1000/400?image=3" width="100%" alt="Photo">
+            </div>
+            ...
+          </div>
+          <!-- End Carousel -->
+        </div>
+      </div>
+    </div>
+    <!-- First Row of Images -->
+    <div class="row" style="padding-top: 5px;">
+      <div class="col-sm-4">
+        <a type="image" class="img-responsive img-circle" data-toggle="modal" data-target="#imageFour">
+          <img src="http://unsplash.it/400?image=4" class="img-responsive img-circle" alt="Photo"/>
+        </a>
+        <div id="imageFour" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="http://unsplash.it/400?image=4" class="img-responsive img-circle" alt="Photo"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <a type="image" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#imageFive">
+          <img src="http://unsplash.it/400?image=5" class="img-responsive" alt="Photo"/>
+        </a>
+        <div id="imageFive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="http://unsplash.it/400?image=5" class="img-responsive" alt="Photo"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <a type="image" class="img-responsive img-circle" data-toggle="modal" data-target="#imageSix">
+          <img src="http://unsplash.it/400?image=6" class="img-responsive img-circle" alt="Photo"/>
+        </a>
+        <div id="imageSix" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="http://unsplash.it/400?image=6" class="img-responsive img-circle" alt="Photo"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End First Row of Images -->
+    <!-- Begin Second Row of Images -->
+    <div class="row">
+      <div class="col-sm-4">
+        <a type="image" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#imageSeven">
+          <img src="http://unsplash.it/400?image=7" class="img-responsive" alt="Photo"/>
+        </a>
+        <div id="imageSeven" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="http://unsplash.it/400?image=7" class="img-responsive" alt="Photo"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <a type="image" class="img-responsive img-circle" data-toggle="modal" data-target="#imageEight">
+          <img src="http://unsplash.it/400?image=8" class="img-responsive img-circle" alt="Photo"/>
+        </a>
+        <div id="imageEight" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="http://unsplash.it/400?image=8" class="img-responsive img-circle" alt="Photo"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <a type="image" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#imageNine">
+          <img src="http://unsplash.it/400?image=9" class="img-responsive" alt="Photo"/>
+        </a>
+        <div id="imageNine" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="http://unsplash.it/400?image=9" class="img-responsive" alt="Photo"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Second Row of Images -->
+  <!--Mandatory Scripts for Bootstrap to work -->
+  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
